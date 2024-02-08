@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+
+        }
+
+        .shape {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 2048px;
+            width: 80vw;
+            min-height: 80vh;
+            height: 80vh;
+            margin: 24px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+
+
+
+        .container div {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+
+       .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycount {
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: rgba(255, 0, 0, 0.315);
+            font-size: 22px;
+            width: 100vmin;
+            margin: 24px auto;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shape">
+        <h1>This is a example</h1>
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum inventore quasi ipsam similique? Ab
+            nobis, incidunt iure atque quo laboriosam inventore cumque iusto facere, quaerat dolorum illum deserunt
+            maiores ex fugiat dolorem ea veritatis. Reprehenderit!
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quos sed saepe? Quibusdam, modi?
+                Accusantium dignissimos aperiam nemo animi provident voluptas omnis, adipisci nam aspernatur ipsum
+                voluptate quisquam, quia ducimus veritatis quidem, voluptatum fugiat.
+            </div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus in quae excepturi error impedit
+        iste neque dolor officiis. Dolores ea illum architecto fugit excepturi adipisci optio sint, maxime quibusdam
+        exercitationem ad voluptatem iusto? Quod officiis sunt rerum! Exercitationem blanditiis magni, veniam dolorum
+        nostrum molestiae nemo saepe voluptatem deserunt possimus vitae repellendus velit dicta cupiditate sit itaque
+        eum delectus atque. Quasi beatae possimus sit impedit harum odio fugit in maxime et accusamus fugiat delectus,
+        nemo illum asperiores dignissimos, doloribus magni perspiciatis consectetur vero aliquid itaque iste veritatis
+        placeat. Quia earum aspernatur ullam veniam nihil beatae, officia recusandae similique dolor incidunt
+        consequatur dignissimos. Ratione in itaque suscipit placeat eum facilis amet nam aspernatur minus quam ipsum
+        modi soluta sed aut minima autem similique reiciendis velit provident perspiciatis, commodi voluptatibus
+        adipisci veniam? Fugiat possimus quasi
+
+    </div>
+
+    <div class="mycount">
+        This is another container
+    </div>
+</body>
+
+</html>

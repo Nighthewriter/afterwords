@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-multicolor website </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    </style>
+
+  
+    <style>
+
+        :root{
+            --primary:#9947e5c9;
+            --text-color:azure;
+            --secondary-color:#b8c0ff;
+        }
+
+        body{
+            background-color: var(--secondary-color);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color:var(--primary);
+            padding: 12px 0px;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;  
+            font-weight: bolder;
+            color: var(--text-color);
+            
+          
+        }
+
+        
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+           
+
+        }
+
+        .box{
+            height: 100px;
+            width: 60px;
+            border: 2px solid red;
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a   class="active"  href="/"  >Home</a></li>
+                <li><a href="">About us </a></li>
+                <li><a href="">Contact us </a></li>
+                <li><a href="">Our services </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box">
+        <div></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, ex itaque! Dolore perferendis quibusdam accusantium corrupti nemo cum sequi animi esse soluta voluptatum? </p>
+    </div>
+
+</body>
+
+</html>
+

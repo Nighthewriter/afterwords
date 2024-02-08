@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation </title>
+    <style>
+        .container{
+            
+            background-color: aqua;
+            width: 80vw;
+            height: 40vh;
+
+        }
+
+        .box{
+            /* display: flex;
+            align-items: center; */
+            width: 34px;
+            height: 23px;
+           
+            /* background-color: red; */
+            /* animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count:none;
+            animation-timing-function: cubic-bezier(0, 0, 0.1, 0.99);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: example 3s cubic-bezier(0, 0, 0.1, 0.99)  3s infinite alternate-reverse,
+                         example2 3s ease-in-out 3s infinite ;
+
+        }
+
+        @keyframes example {
+            from{
+                background-color: rgb(140, 140, 204);
+            }
+
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes example2 {
+            20%{
+                transform: rotate(200deg);
+
+            }
+            30%{
+                transform: rotate(300deg);
+            }
+
+            40%{
+                transform: rotate(400deg);
+            }
+
+            50%{
+                transform: rotate(500deg);
+            }
+
+            80%{
+                transform: rotate(80%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">BOx</div>
+    </div>
+    
+</body>
+</html>

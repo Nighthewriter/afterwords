@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 100vh;
+            border: 2px solid rgb(0, 0, 0);
+            display: grid;
+            /* grid-template-columns: [Phela] 120px  [doosra] 100px [t]; */
+            grid-template-rows: 100px 100px 100px ;
+            grid-template-columns:repeat(4, minmax(100px, 1fr));
+            row-gap: 34px;
+            column-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+        }
+         
+        .iteams{
+            border: solid red;
+            height: 55px;
+            width: 45px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteams iteam-1">1</div>
+        <div class="iteams">2</div>
+        <div class="iteams">3</div>
+        <div class="iteams iteam-4">4</div>
+        <div class="iteams">5</div>
+        <div class="iteams">6</div>
+    </div>
+</body>
+</html>

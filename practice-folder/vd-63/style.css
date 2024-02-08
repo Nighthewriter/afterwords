@@ -1,0 +1,12 @@
+
+.container{
+    position: relative;
+    left: 145px;
+    border-radius: 16px;
+    margin: 34px;
+    padding: 34px;
+    width: 40vw;
+    height: 71vh;
+    background-color:white ;
+
+}
